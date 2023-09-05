@@ -167,7 +167,7 @@ for i in range (num_a, num_b):
         print(f"{i}, es par")
     else:
         print(f"{i}, es impar")
-"""
+
 print("______________________________________________________________________")
 
 #Ejercicio 15
@@ -181,3 +181,113 @@ for i in range(1,num+1):
     if num%i==0:
         print(i ," es divisor de ", num)
         
+print("______________________________________________________________________")
+
+#Ejercicio 16
+#Escriba un programa que pregunte cuántos números se van a introducir, pida esos números y escriba cuántos negativos ha introducido.
+print("Contador de números negativos")
+count= int(input("Ingrese la cantidad de numeros a contar:"))
+amountNegative = 0
+for i in range(count):
+    number= int(input("Ingrese un numero:"))
+    if 0>number:
+        amountNegative +=1
+print(amountNegative, "de los numeros que ingresó son negativos")
+
+print("______________________________________________________________________")
+
+#Ejercicio 17
+#Solicitar al usuario que ingrese una frase y luego imprimir un listado de las vocales que aparecen en esa frase (sin repetirlas).
+phrase = input("Ingrese una frase: ")
+vowels= "aeiou"
+listv = " "
+for letter in phrase:
+    if letter in vowels and not(letter in listv):
+        listv = listv + letter
+print(f"Se encontró {listv}")
+
+print("______________________________________________________________________")
+
+#Ejercicio 18
+#Crear un algoritmo que muestre los primeros 10 números de la sucesión de Fibonacci. La sucesión comienza con los números 0 y 1 y, a partir de éstos, cada elemento es la suma de los dos números anteriores en la secuencia: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55…
+print("Fibonacci")
+fibSequence = [0, 1]
+for i in range(10):
+    nextNumber = fibSequence[-2]+fibSequence[-1]
+    fibSequence.append(nextNumber)
+print(fibSequence)
+
+#Ejercicio 19
+#19-	Escriba un programa que simule una alcancía. El programa solicitará primero una cantidad, que será la cantidad de dinero que queremos ahorrar. A continuación, el programa solicitará una y otra vez las cantidades que se irán ahorrando, hasta que el total ahorrado iguale o supere al objetivo. El programa deberá comprobar que las cantidades ingresadas sean positivas.
+
+objetive= int(input("Inserte la cantidad de valor a la qué le gustaría llegar "))
+actually= 0
+while actually < objetive:
+    mount= int(input("Ingrese su ahorro diario "))
+    actually= actually + mount
+    print(f"actualmente su billetera cuenta con {actually}$")
+
+
+#Ejercicio 20
+#20-	Leer números enteros de teclado, hasta que el usuario ingrese el 0. Finalmente, mostrar la sumatoria de todos los números ingresados.
+number = 1
+total=0
+while number > 0 or number <0:
+    number=int(input("Ingrese un numero, si ingresa 0 la lista se cortara, si ingresa otro valor se sumara a los anteriormente ingresados"))
+    total= total + number
+print("La suma de sus numeros es igual a ", total)
+    
+
+#Ejercicio 21
+#Leer números enteros positivos de teclado, hasta que el usuario ingrese el 0. Informar cuál fue el mayor número ingresado.
+print("El mayor de los números ingresados")
+close = 1
+the_oldest = 0
+while close != 0:
+    number = int(input("Ingrese un número entero y cero para salir: "))
+    if (number > the_oldest):
+        the_oldest = number
+    elif(number == 0):
+        close = 0
+print(f"Número mayor: {the_oldest}")
+    
+"""
+#Ejercicio 22
+#22-	Solicitar al usuario que ingrese números enteros positivos y, por cada uno, imprimir la suma de los dígitos que lo componen. La condición de corte es que se ingrese el número -1. Al finalizar, mostrar cuántos de los números ingresados por el usuario fueron números pares.
+
+odd=0
+while True:
+    number=input("Ingrese un numero, si este es -1 saldrá del comando ")
+    if number =="-1":
+        break
+    else:
+        count=0
+        for i in number:
+            i=int(i)
+            count+=i
+        print("La suma de ambos numeros es ", count)
+        if int(number)%2==0:
+            odd+=1
+print("La cantidad de numeros impares es ", odd)
+
+#Ejercicio 23
+# Crear un programa que permita al usuario ingresar los montos de las compras de un cliente (se desconoce la cantidad de datos que cargará, la cual puede cambiar en cada ejecución), cortando el ingreso de datos cuando el usuario ingrese el monto 0.
+print("Compras del cliente X")
+close = 1
+sale = 0
+acount = []
+while close != 0:
+    sale = float(input("Ingrese el monto de la compra o cero para salir "))
+    if (sale > 0):
+        acount.append(sale)
+    elif(sale == 0):
+        close = 0
+print(f"Compras: {acount}")
+
+#Ejercicio 24
+#Si ingresa un monto negativo, no se debe procesar y se debe pedir que ingrese un nuevo monto. Al finalizar, informar el total a pagar teniendo que cuenta que, si las ventas superan el total de $1000, se le debe aplicar un 10% de descuento.
+
+
+
+#Ejercicio 25
+#25-	Dado un número entero positivo, mostrar su factorial. El factorial de un número se obtiene multiplicando todos los números enteros positivos que hay entre el 1 y ese número. El factorial de 0 es 1.
