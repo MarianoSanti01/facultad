@@ -1,4 +1,4 @@
-"""#Ejercicio 1
+#Ejercicio 1
 print("1-	Escribir un programa que pida al usuario una palabra y la muestre por pantalla 10 veces.")
 
 word = input("Ingrese una palabra y será mostrada diez veces ")
@@ -251,7 +251,6 @@ while close != 0:
         close = 0
 print(f"Número mayor: {the_oldest}")
     
-"""
 #Ejercicio 22
 #22-	Solicitar al usuario que ingrese números enteros positivos y, por cada uno, imprimir la suma de los dígitos que lo componen. La condición de corte es que se ingrese el número -1. Al finalizar, mostrar cuántos de los números ingresados por el usuario fueron números pares.
 
@@ -287,7 +286,41 @@ print(f"Compras: {acount}")
 #Ejercicio 24
 #Si ingresa un monto negativo, no se debe procesar y se debe pedir que ingrese un nuevo monto. Al finalizar, informar el total a pagar teniendo que cuenta que, si las ventas superan el total de $1000, se le debe aplicar un 10% de descuento.
 
+print("Compras del cliente X")
+close = 1
+sale = 0
+acount = []
+total_sale = 0
+while close != 0:
+    sale = float(input("Ingrese el monto de la compra o cero para salir "))
+    if (sale > 0):
+        acount.append(sale)
+        total_sale += sale
+    elif(sale == 0):
+        close = 0
+    
+print(f"Total: {total_sale}")
+if(total_sale > 1000):
+    discountPurchase = total_sale - (total_sale * 0.10)
+    print(f"Total con descuento: {discountPurchase}")
 
+#Ejercicio 24
+#Si ingresa un monto negativo, no se debe procesar y se debe pedir que ingrese un nuevo monto. Al finalizar, informar el total a pagar teniendo que cuenta que, si las ventas superan el total de $1000, se le debe aplicar un 10% de descuento.
 
-#Ejercicio 25
-#25-	Dado un número entero positivo, mostrar su factorial. El factorial de un número se obtiene multiplicando todos los números enteros positivos que hay entre el 1 y ese número. El factorial de 0 es 1.
+print("Compras del cliente X")
+close = 1
+sale = 0
+acount = []
+total_sale = 0
+while close != 0:
+    sale = float(input("Ingrese el monto de la compra o cero para salir "))
+    if (sale > 0):
+        acount.append(sale)
+        total_sale += sale
+    elif(sale == 0):
+        close = 0
+    
+print(f"Total: {total_sale}")
+if(total_sale > 1000):
+    discountPurchase = total_sale - (total_sale * 0.10)
+    print(f"Total con descuento: {discountPurchase}")
