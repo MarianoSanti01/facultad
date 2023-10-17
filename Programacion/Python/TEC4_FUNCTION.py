@@ -1,3 +1,4 @@
+#EJ1
 # Función para agregar pasajeros a la lista de viajeros
 def add_passenger(passengers):
     name = input("Ingrese el nombre del pasajero: ")
@@ -42,3 +43,5 @@ def count_passengers_by_country(passengers,cities):
     country = input("Ingrese el nombre del país: ")
     count = sum(1 for passenger in passengers for city, c in cities if city == passenger[2] and c == country)
     print(f"La cantidad de pasajeros que viajan a {country} es: {count}")
+
+#EJ2
