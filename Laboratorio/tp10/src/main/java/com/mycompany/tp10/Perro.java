@@ -1,3 +1,5 @@
+package com.mycompany.tp10;
+
 public class Perro {
     private String nombre;
     private String raza;
@@ -30,9 +32,4 @@ public class Perro {
     public void ladrar() {
         System.out.println("Guau, guau");
     }
-}
-public class Circulo{
-    private float radio;
-
-    private float
 }
