@@ -1,3 +1,5 @@
+package com.mycompany.tp10;
+
 public class Perro {
     private String nombre;
     private String raza;
@@ -36,4 +38,7 @@ public class Perro {
         System.out.println("Edad del perro: "+edad);
     }
 }
+<<<<<<< HEAD:Laboratorio/tp-10/src/Perro.java
 
+=======
+>>>>>>> cc5963581711ae16cfffce0ece954108d1761957:Laboratorio/tp10/src/main/java/com/mycompany/tp10/Perro.java
