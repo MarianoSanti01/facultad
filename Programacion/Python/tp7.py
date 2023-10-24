@@ -26,16 +26,16 @@ print(" ")
 print("_______________________________")
 print(" ")
 #3.	Crea una lista de diccionarios, donde cada diccionario contiene información sobre un libro (título, autor, año de publicación, etc.). Luego, escribe un programa que ordene la lista de libros en función de un campo específico, como el año de publicación o el autor.
-books = [
-    {"titulo": "Libro A", "autor": "Autor X", "año_publicacion": 2000},
-    {"titulo": "Libro B", "autor": "Autor Y", "año_publicacion": 1995},
-    {"titulo": "Libro C", "autor": "Autor Z", "año_publicacion": 2010},
-    {"titulo": "Libro D", "autor": "Autor X", "año_publicacion": 2015},
-]
+books = {
+    "Libro A": {"autor": "Autor X", "año_publicacion": 2000},
+    "Libro B": {"autor": "Autor Y", "año_publicacion": 1995},
+    "Libro C": {"autor": "Autor Z", "año_publicacion": 2010},
+    "Libro D": {"autor": "Autor X", "año_publicacion": 2015},
+}
 
-bubble_sortdic
+ordenamiento_burbuja_dic(list(books.values()))
 print("Libros ordenados por año de publicacion: ")
-for books in books_sorted_by_year:
+for i,j in books.items():
     print(f"Título: {books['titulo']}, Autor: {books['autor']}, Año de Publicación: {books['año_publicacion']}")
 
 print(" ")

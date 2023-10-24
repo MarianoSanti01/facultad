@@ -30,9 +30,10 @@ public class Perro {
     public void ladrar() {
         System.out.println("Guau, guau");
     }
+    public void datos() {
+        System.out.println("Nombre del perro: "+nombre);
+        System.out.println("Raza del perro : "+raza);
+        System.out.println("Edad del perro: "+edad);
+    }
 }
-public class Circulo{
-    private float radio;
 
-    private float
-}
