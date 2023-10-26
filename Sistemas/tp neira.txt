@@ -1,0 +1,7 @@
+1: SELECT * FROM `factura` where nrofact > 1000;
+
+2: SELECT nrofact,fecha,hora FROM `factura` where codcliente < 102;
+
+3: SELECT nrofact FROM `factura` WHERE fecha > 29-03-2023;
+
+4: SELECT nrofact,hora FROM `factura` WHERE nrofact = 1003;
