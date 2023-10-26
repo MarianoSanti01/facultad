@@ -1,12 +1,11 @@
-<<<<<<< HEAD
+
 from tp6f import*
 primary_names=[]
 secondary_names=[]
 
-print ""
-=======
+
 #Ejercicio 1 + ejercicio 2 + ejercicio 3 + ejercicio 4 + ejercicio 5
-from functions.funciones_dimensionales import *
+from funciones_dimensionales import *
 data=[]
 while True:
     num=int(input("ingrese en numero \n"))
@@ -259,7 +258,7 @@ print(" ")
 print("______________________________________________________________________________________________")
 print(" ")
 #ejercicio 11
-from functions.funciones_dimensionales import *
+from funciones_dimensionales import *
 dictionary={'Euro':'€', 'Dollar':'$', 'Yen':'¥'}
 divisa=input("ingrese la divisa a consultar\n").lower()
 validation=exist_dictionary(dictionary,divisa)
@@ -273,7 +272,7 @@ print(" ")
 print("______________________________________________________________________________________________")
 print(" ")
 #ejercicio 12
-from functions.funciones_dimensionales import *
+from funciones_dimensionales import *
 
 dictionary={}
 name=input("ingrese su nombre\n").lower()
@@ -288,7 +287,7 @@ print(" ")
 print("______________________________________________________________________________________________")
 print(" ")
 #ejercicio 13
-from functions.funciones_dimensionales import *
+from funciones_dimensionales import *
 fruits={}
 while True:
     fruit=input("Ingrese nombre de la fruta\n").lower()
@@ -304,4 +303,4 @@ while True:
         price_given=search_value_in_dictionary(fruits,fruit)
         total=price_given*kg
     print("valor por kg de ",fruit," es ",price_given,"por los ",kg," kg's pedidos el total a pagar es de ",total)
->>>>>>> ab830500cefdf504ded374a46a5ccbd4937151a2
+

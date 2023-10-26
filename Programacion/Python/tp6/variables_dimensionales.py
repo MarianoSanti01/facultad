@@ -1,5 +1,5 @@
 #EJERCICIO 1
-from functions.funciones_dimensionales import *
+from funciones_dimensionales import *
 from functions.numbers_addition import dni_verification
 pasangers=[]
 destinys=[]
@@ -84,7 +84,7 @@ adresses=give_elements(shopping,3)
 print("las direcciones de la lista son: ")
 show_list(adresses)
 #EJERCICIO 3
-from functions.funciones_dimensionales import *
+from funciones_dimensionales import *
 dictionarys=[
     {"number":1,"name":'Amanda Núñez',"date":'17/03/2009',"at_day":True},
     {"number":2,"name":'Bárbara Molina',"date":'17/03/2009',"at_day":True},
