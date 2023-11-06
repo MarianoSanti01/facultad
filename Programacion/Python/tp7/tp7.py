@@ -92,8 +92,9 @@ print(" ")
 #6.	Escribe un programa que tome una lista de números enteros y ordene la lista utilizando el algoritmo de ordenamiento por conteo.
 entry= input("Ingrese una lista de numeros separada por espaicos: ")
 numbers= [int(x) for x in entry.split()]
+from ordenamientos import counting_sort
+sorted_numbers= counting_sort(numbers) ##No puedo importarla correctamente. no se que pasa
 
-sorted_numbers= counting_sort(numbers)
 print("Lista ordenada por conteo:")
 print(sorted_numbers)
 
